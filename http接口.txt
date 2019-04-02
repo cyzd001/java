@@ -1,0 +1,114 @@
+
+二八杠
+入参：
+{
+	"playlist":[
+		{
+		"setNum":0,
+		"isDealer":1,   //1代表庄家  0代表闲家
+		"cards":[1,4]   //代表牌
+		}
+		{
+		"setNum":1,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[5,6]
+		}
+		{
+		"setNum":2,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[7,3]
+		}
+		{
+		"setNum":3,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[2,7]
+		}
+]	
+}
+出参：
+{
+	"result":[
+		{
+		"setNum":0,
+		"isDealer":1,   //1代表庄家  0代表闲家
+		"cards":[1,4]   //代表牌   
+		}
+		{
+		"setNum":1,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[5,6],
+		"winLose":“胜利”   //和庄家比牌结果
+		}
+		{
+		"setNum":2,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[7,3],
+		"winLose":“胜利”
+		}
+		{
+		"setNum":3,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[2,7],
+		"winLose":“胜利”
+		}
+]	
+}
+
+抢庄牛牛
+入参：
+{
+	"playlist":[
+		{
+		"setNum":0,
+		"isDealer":1,   //1代表庄家  0代表闲家
+		"cards":[]   //代表牌
+		}
+		{
+		"setNum":1,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[]
+		}
+		{
+		"setNum":2,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[]
+		}
+		{
+		"setNum":3,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[]
+		}
+]	
+}
+出参：
+{
+	"result":[
+		{
+		"setNum":0,
+		"isDealer":1,   //1代表庄家  0代表闲家
+		"cards":[1,4]   //代表牌
+   		"type": 14     // 0代表无牛，1代表牛一，依次类推，14代表五小牛 
+		}
+		{
+		"setNum":1,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[5,6],
+		"type": 14，
+		"winLose":“胜利”   //和庄家比牌结果
+		}
+		{
+		"setNum":2,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[7,3],
+		"type": 14
+		"winLose":“胜利”
+		}
+		{
+		"setNum":3,
+		"isDealer":0,   //1代表庄家  0代表闲家
+		"cards":[2,7],
+		"type": 14
+		"winLose":“胜利”
+		}
+]	
+}
