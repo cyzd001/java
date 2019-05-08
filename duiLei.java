@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Random;
+
 
 public class duiLei {
 	// LinkedList队列，以堆栈运行，先进后出
@@ -68,6 +70,7 @@ public class duiLei {
           
         for(String s : userlist){  
             System.out.print(s+" ");  
-        }  
-	}
+        }
 }
+}
+
