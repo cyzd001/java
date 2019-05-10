@@ -11,10 +11,16 @@ public class MainApp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println(solution.shuffle()[0]);
+		int[] nums = {8,2,4,10,5};		
 		hanSu test = new hanSu();
+		faPai fapai =new faPai();
+		fapai.getPai(3);
+		System.out.println(fapai.poker());
+		test.paixing(nums);
 		test.biao();
 		test.jiaFa();
 		System.out.println("");
 		System.out.println(test.a);		
 	}
+	
 }

@@ -144,7 +144,21 @@ public class hanSu {
 			System.out.println();  //换行输出
 		}
 	}
-
+    public void paixing(int[] nums) {
+    	for(int i=0;i<nums.length;i++) {
+    		for(int j=i+1;j<nums.length;j++) {
+    			for(int k=j+1;k<nums.length;k++) {
+    				int numbe=nums[i]+nums[j]+nums[k];
+    				if(numbe%10==0) {
+    					System.out.println("牌型为牛牌型");
+    				}
+    				else {
+    					System.out.println("牌型为无牛牌型");
+    				}
+    			}
+    		}
+    	}
+    }
 }
 
 
